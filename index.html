@@ -7,21 +7,58 @@
     <title>Century Bakery</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="gambar/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="jquery.js" />
+    <script src="jquery.js"></script>
+    <script src="type.js"></script>
+    <script src="aos.js"></script>
+    <link rel="stylesheet" href="aos.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css">
   </head>
   <body>
     <div class="nav">
       <a href="">Beranda</a>
       <a href="">Tentang</a>
-      <a href="">
-        <img src="gambar/logo.png" alt="" />
-      </a>
+      <img src="gambar/logo.png" alt="" />
+      <a href="">Produk</a>
+      <a href="">Kontak</a>
+      <i id="btn-nav" class="fa-solid fa-bars"></i>
+    </div>
+    <div class="nav-menu">
+      <i id="btn-menu" class="fa-solid fa-xmark"></i>
+      <a href="">Beranda</a>
+      <a href="">Tentang</a>
       <a href="">Produk</a>
       <a href="">Kontak</a>
     </div>
     <div class="beranda" id="beranda">
-      <h1>Food makes happy</h1>
+      <span id="typed"></span>
     </div>
-    <div class="tentang"></div>
+    <div class="tentang container">
+      <img src="gambar/paperbag.png" alt="">
+      <div class="area-tentang">
+        <h1 class="judul">Tentang Kami</h1>
+        <p>Century Bakery berdiri sejak 1920 di Indonesia. Dengan Motto Pelayanan Dan Kualitas Terbaik, Kami selalu memilih pegeawai yang Terbaik dan juga Bahan Bahan Terbaik.</p>
+      </div>
+    </div>
+    <div class="menu carousel">
+
+    </div>
+
+    <script>
+      AOS.init();
+
+      new Typed("#typed", {
+        strings: ["Food Make Happiness", "Fresh Ingredients Every Day"],
+        typeSpeed: 100,
+        delaySpeed: 100,
+        loop: true,
+      });
+
+      $("#btn-nav").click(function(){
+        $(".nav-menu").toggleClass("active");
+      });
+      $("#btn-menu").click(function(){
+        $(".nav-menu").toggleClass("active");
+      });
+    </script>
   </body>
 </html>
