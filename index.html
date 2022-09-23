@@ -10,55 +10,231 @@
     <script src="jquery.js"></script>
     <script src="type.js"></script>
     <script src="aos.js"></script>
+    <script src="flickity.pkgd.min.js"></script>
     <link rel="stylesheet" href="aos.css" />
-    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="flickity.css" />
+    <script src="smoth-scroll.js"></script>
   </head>
   <body>
     <div class="nav">
-      <a href="">Beranda</a>
-      <a href="">Tentang</a>
+      <a data-scroll data-easing="easeInQuint" href="#beranda">Beranda</a>
+      <a data-scroll data-easing="easeInQuint" href="#tentang">Tentang</a>
+      <a data-scroll data-easing="easeInQuint" href="#menu">Menu</a>
       <img src="gambar/logo.png" alt="" />
-      <a href="">Produk</a>
-      <a href="">Kontak</a>
-      <i id="btn-nav" class="fa-solid fa-bars"></i>
+      <a data-scroll data-easing="easeInQuint" href="#review">Review</a>
+      <a data-scroll data-easing="easeInQuint" href="#partnership">Partnership</a>
+      <a data-scroll data-easing="easeInQuint" href="#lokasi">Lokasi</a>
+      <img src="gambar/menu.png" alt="" id="btn-nav">
     </div>
     <div class="nav-menu">
-      <i id="btn-menu" class="fa-solid fa-xmark"></i>
-      <a href="">Beranda</a>
-      <a href="">Tentang</a>
-      <a href="">Produk</a>
-      <a href="">Kontak</a>
+      <div class="btn-menu">
+        <img src="gambar/close.png" alt="" id="btn-menu">
+      </div>
+      <a id="nav-link" data-scroll data-easing="easeInQuint" href="#beranda">Beranda</a>
+      <a id="nav-link1" data-scroll data-easing="easeInQuint" href="#tentang">Tentang</a>
+      <a id="nav-link2" data-scroll data-easing="easeInQuint" href="#menu">Menu</a>
+      <a id="nav-link3" data-scroll data-easing="easeInQuint" href="#review">Review</a>
+      <a id="nav-link4" data-scroll data-easing="easeInQuint" href="#partnership">Partnership</a>
+      <a id="nav-link5" data-scroll data-easing="easeInQuint" href="#lokasi">Lokasi</a>
     </div>
     <div class="beranda" id="beranda">
       <span id="typed"></span>
     </div>
-    <div class="tentang container">
-      <img src="gambar/paperbag.png" alt="">
+    <div class="background1">
+    <div class="tentang container" id="tentang">
+      <img src="gambar/paperbag.png" alt="" />
       <div class="area-tentang">
         <h1 class="judul">Tentang Kami</h1>
-        <p>Century Bakery berdiri sejak 1920 di Indonesia. Dengan Motto Pelayanan Dan Kualitas Terbaik, Kami selalu memilih pegeawai yang Terbaik dan juga Bahan Bahan Terbaik.</p>
+        <p>
+          Century Bakery berdiri sejak 1920 di Indonesia. Dengan Motto Pelayanan Dan Kualitas Terbaik, Kami selalu memilih pegeawai yang Terbaik dan juga Bahan Bahan Terbaik. Kami Membuat Hidangan Dengan Bahan Lokal, Kami Membuatnya Dengan Tangan Dan Cinta.
+        </p>
+        <p>. . .</p>
       </div>
     </div>
-    <div class="menu carousel">
-
+    <div class="menu container" id="menu">
+      <h1 class="judul">Pilihan Menu</h1>
+      <div class="carousel">
+        <div class="box-menu carousel-cell">
+          <img src="gambar/coockies.jpg" alt="">
+          <h1>Coockies</h1>
+        </div>
+        <div class="box-menu carousel-cell">
+          <img src="gambar/croissant.jpg" alt="">
+          <h1>Croissant</h1>
+        </div>
+        <div class="box-menu carousel-cell">
+          <img src="gambar/baguette.jpg" alt="">
+          <h1>Baguette</h1>
+        </div>
+        <div class="box-menu carousel-cell">
+          <img src="gambar/pretzels.jpg" alt="">
+          <h1>Pretzel</h1>
+        </div>
+        <div class="box-menu carousel-cell">
+          <img src="gambar/sourdough.jpg" alt="">
+          <h1>Sourdough</h1>
+        </div>
+        <div class="box-menu carousel-cell">
+          <img src="gambar/donuts.jpg" alt="">
+          <h1>Donuts</h1>
+        </div>
+        <div class="box-menu carousel-cell">
+          <img src="gambar/muffin.jpg" alt="">
+          <h1>Muffin</h1>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="review container" id="review">
+    <h1 class="judul">Review</h1>
+    <div class="area-review">
+      <div class="box-review">
+        <img src="gambar/profile.png" alt="">
+        <h1>Crish Ederson</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, laborum! adipisicing elit. Eos, placeat.</p>
+        <p>. . .</p>
+      </div>
+      <div class="box-review">
+        <img src="gambar/profile1.png" alt="">
+        <h1>Natalie Hadel</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, laborum! adipisicing elit. Eos, placeat.</p>
+        <p>. . .</p>
+      </div>
+      <div class="box-review">
+        <img src="gambar/profile2.png" alt="">
+        <h1>David Handrick</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, laborum! adipisicing elit. Eos, placeat.</p>
+        <p>. . .</p>
+      </div>
+    </div>
+  </div>
+  <div class="partner container" id="partnership">
+    <h1 class="judul">Partnership</h1>
+    <div class="main-carousel">
+      <div class="carousel-cell">
+        <img src="gambar/AYANA.png" alt="">
+      </div>
+      <div class="carousel-cell">
+        <img src="gambar/grand-aston.png" alt="">
+      </div>
+      <div class="carousel-cell">
+        <img src="gambar/LOGO-GIK.png" alt="">
+      </div>
+      <div class="carousel-cell">
+        <img src="gambar/padma-legian-logo.png" alt="">
+      </div>
+      <div class="carousel-cell">
+        <img src="gambar/potato-head.png" alt="">
+      </div>
+      <div class="carousel-cell">
+        <img src="gambar/hard-rock.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="lokasi container" id="lokasi">
+    <h1 class="judul">Lokasi Toko</h1>
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.6582202111285!2d115.17399811402282!3d-8.628772390091752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd238cfa9704293%3A0xb90785bd6a37c482!2sSMK%20Wira%20Harapan!5e0!3m2!1sen!2sid!4v1663761769380!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="footer">
+    <div class="footer-1">
+      <div class="footer-logo">
+        <img src="gambar/logo.png" alt="">
+        <h1>Century Bakery</h1>
+      </div>
+        <p>Memberikan Pelayanan Yang Terbaik <br> Dibuat Dengan Tangan Dan Cinta.</p>
+        <div class="sosial-media">
+          <a href="">
+            <img src="gambar/facebook.png" alt="">
+          </a>
+          <a href="">
+            <img src="gambar/instagram.png" alt="">
+          </a>
+          <a href="">
+            <img src="gambar/twitter.png" alt="">
+          </a>
+        </div>
+    </div>
+    <div class="footer-2">
+      <h1>Kontak</h1>
+      <a href="">0833 1234 5678</a>
+      <a href="">info@centurycafe.id</a>
+    </div>
+    <div class="footer-3">
+      <h1>Waktu Operasional</h1>
+      <p>Senin - Rabu 07.00 - 21.00</p>
+      <p>Kamis - Sabtu 07.00 - 20.00</p>
+      <p>Minggu 06.00 - 22.00</p>
+    </div>
+    <div class="footer-4">
+      <h1>Link</h1>
+      <a data-scroll data-easing="easeInQuint" href="#beranda">Beranda</a>
+      <a data-scroll data-easing="easeInQuint" href="#tentang">Tentang</a>
+      <a data-scroll data-easing="easeInQuint" href="#menu">Menu</a>
+      <a data-scroll data-easing="easeInQuint" href="#review">Review</a>
+      <a data-scroll data-easing="easeInQuint" href="#partnership">Partnership</a>
+      <a data-scroll data-easing="easeInQuint" href="#lokasi">Lokasi</a>
+    </div>
+  </div>
 
     <script>
       AOS.init();
 
       new Typed("#typed", {
-        strings: ["Food Make Happiness", "Fresh Ingredients Every Day"],
+        strings: [
+          "Food Make Happiness",
+          "Fresh Ingredients Every Day",
+          "HANDMADE WITH AN EXTRA PINCH OF LOVE",
+        ],
         typeSpeed: 100,
         delaySpeed: 100,
         loop: true,
       });
 
-      $("#btn-nav").click(function(){
-        $(".nav-menu").toggleClass("active");
+      $("#btn-nav").click(function () {
+        $(".nav-menu").addClass("active");
       });
-      $("#btn-menu").click(function(){
-        $(".nav-menu").toggleClass("active");
+      $("#btn-menu").click(function () {
+        $(".nav-menu").removeClass("active");
       });
+      $("#nav-link").click(function() {
+        $(".nav-menu").removeClass("active");
+      });
+      $("#nav-link1").click(function() {
+        $(".nav-menu").removeClass("active");
+      });
+      $("#nav-link2").click(function() {
+        $(".nav-menu").removeClass("active");
+      });
+      $("#nav-link3").click(function() {
+        $(".nav-menu").removeClass("active");
+      });
+      $("#nav-link4").click(function() {
+        $(".nav-menu").removeClass("active");
+      });
+      $("#nav-link5").click(function() {
+        $(".nav-menu").removeClass("active");
+      });
+
+      $(".carousel").flickity({
+        cellAlign: "left",
+        contain: true,
+        autoPlay: true,
+        wrapAround: true,
+      });
+      $(".main-carousel").flickity({
+        cellAlign: "left",
+        contain: true,
+        autoPlay: true,
+        wrapAround: true,
+        prevNextButtons: false,
+        pageDots: false,
+      });
+      var scroll = new SmoothScroll('a[href*="#"]',{
+        speed: 400,
+        speedAsDuration: true
+      });
+      var easeInQuint = new SmoothScroll('[data-easing="easeInQuint"]', {easing: 'easeInQuint'});
     </script>
   </body>
 </html>
